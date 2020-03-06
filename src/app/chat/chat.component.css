@@ -1,0 +1,11 @@
+.thread {
+  max-width: 600px;
+  padding: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.post-message-box {
+  padding: 5px;
+  display: inline-block;
+}
