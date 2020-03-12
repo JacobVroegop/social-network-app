@@ -10,10 +10,8 @@ import { AppComponent } from './app.component';
 import { NgUserManagementModule } from 'ng-usermanagement';
 
 import { LoginComponent } from './login/login.component';
-import { HomeComponent } from './home/home.component';
 import { ChatComponent } from './chat/chat.component';
 import { MessageComponent } from './message/message.component';
-import { ChatSettingsComponent } from './chat-settings/chat-settings.component';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { RegisterComponent } from './register/register.component';
 
@@ -33,10 +31,8 @@ const ngUsermanagmentConfig = {
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent,
     ChatComponent,
     MessageComponent,
-    ChatSettingsComponent,
     RegisterComponent
   ],
   imports: [
