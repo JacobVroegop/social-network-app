@@ -3,7 +3,6 @@ import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/fire
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import * as firebase from 'firebase';
-import { UserService } from 'ng-usermanagement';
 import { UserModel } from 'ng-usermanagement/lib/models/user.model';
 
 export class Message {
@@ -22,7 +21,6 @@ export class ChatMessagesService {
 
   constructor(
     private db: AngularFirestore,
-    private userService: UserService
   ) { }
 
   public createPost(chatId: string, post: string, user: UserModel): any {

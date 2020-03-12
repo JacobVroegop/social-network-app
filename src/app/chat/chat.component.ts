@@ -27,14 +27,14 @@ export class ChatComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.currentMessage$ = this.CMService.getMessages("1");
+    this.currentMessage$ = this.CMService.getMessages(this.curChatId);
     this.user$ = this.userService.user$.pipe(
       map(user => this.curUser = user)
     );
   }
 
   addPost(post: string) {
-    this.CMService.createPost("1", post, this.curUser);
+    this.CMService.createPost(this.curChatId, post, this.curUser);
   }
   
   public signOut() {
