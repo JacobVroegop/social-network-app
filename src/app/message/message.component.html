@@ -1,9 +1,17 @@
 <div class="message-box">
-  Created by: {{message.userEmail}} 
-  <br>
-  {{message.date.getHours()}}:{{message.date.getMinutes()}}
-  <hr>
-  {{message.post}}
-  <br>
-  <button *ngIf="showDeleteButton" (click)="removeMessage()">Delete message</button>
+  <div>
+    <div class="message-email">
+      Created by: {{message.userEmail}} 
+    </div>
+    <div class="message-time">
+      {{message.date.getHours()}}:{{message.date.getMinutes()}}
+    </div>
+  </div>
+  <div class="message">
+    {{message.post}}
+    <div *ngIf="showDeleteButton" >
+      <hr>
+      <button class="button delete-button" (click)="removeMessage()">Delete message</button>
+    </div>
+  </div>
 </div>

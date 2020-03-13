@@ -1,9 +1,9 @@
-<button (click)="signOut()">Logout</button>
+<button class="button" (click)="signOut()">Logout</button>
 
 <div class="thread">
   <div class="post-message-box" *ngIf="user$ | async">
-    <input type="text" #post>
-    <button type="submit" (click)="addPost(post.value)">Submit</button>
+    <input class="message-input" type="text" placeholder="Type here your message" #post>
+    <button class="button submit-button" type="submit" (click)="addPost(post.value)">Submit</button>
   </div>
   
   <div>

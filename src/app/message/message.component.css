@@ -1,5 +1,49 @@
 .message-box {
   padding: 5px;  
   margin: 2px;
+}
+
+.message-email {
+  margin-left: 5px;
+  float: left;
+}
+
+.message-time {
+  margin-right: 5px;
+  float: right;
+}
+
+.message {
+  clear: both;
+  border-radius: 25px;
+  background-color: white;
   border: 1px solid gray;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.button {
+  border-radius: 25px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid red;
+}
+
+.delete-button:hover {
+  background-color: red;
+  color: white;
 }
